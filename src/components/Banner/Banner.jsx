@@ -8,41 +8,18 @@ import logo from '../../assets/logo.png'
 import menu from '../../assets/icons/menu.svg'
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Navbar from '../Navbar/Navbar';
 
 const Banner = () => {
   const [open, setOpen] = useState(false)
   return (
     <div className="relative font-poppins">
-      <img src={bg} className="w-full md:h-[1070px] lg:h-[730px] hidden md:block" alt="" />
+      <img src={bg} className="w-full h-[1350px] md:h-[1070px] lg:h-[730px] md:block" alt="" />
       {/* content goes from here */}
       <div className="max-w-7xl mx-auto absolute inset-0 ">
         {/* navbar */}
-        <div className="max-w-7xl  mx-auto">
-          <div className="flex items-center my-5 mx-5">
-            <img src={logo} alt="" />
-            <div className="lg:flex gap-10 ml-[48px] hidden">
-              <Link className='flex ga text-[18px] font-bold'>Solutions <span><img src={down} alt="" /></span></Link>
-              <Link className='flex ga text-[18px] font-bold'>Features <span><img src={down} alt="" /></span></Link>
-              <Link className='flex ga text-[18px] font-bold'>Blogs <span><img src={down} alt="" /></span></Link>
-              <Link className='flex ga text-[18px] font-bold'>About <span><img src={down} alt="" /></span></Link>
-            </div>
-            <div className="lg:flex hidden gap-4 ml-auto">
-              <Link className='px-[20px] py-[10px] border-width border-primary rounded-[10px] font-[700]  text-primary' to='#'>Login</Link>
-              <Link className='px-[20px] py-[10px] bg-primary rounded-[10px] font-[700] text-white'  to='#'>Register</Link>
-            </div>
-            {/* for mobile and tablet */}
-            <img onClick={() => setOpen(!open)} className='h-6 w-6 ml-auto cursor-pointer lg:hidden' src={menu} alt="" />
-            <div className={!open ? 'lg:hidden  ml-auto hidden flex-col gap-4 p-4 absolute top-14 right-4 bg-gray-200 rounded-2xl' : 'lg:hidden  ml-auto flex flex-col gap-4 p-4 absolute top-14 right-4 bg-gray-200 rounded-2xl'}>
-              <Link className='flex ga text-[18px] font-bold'>Solutions <span><img src={down} alt="" /></span></Link>
-              <Link className='flex ga text-[18px] font-bold'>Features <span><img src={down} alt="" /></span></Link>
-              <Link className='flex ga text-[18px] font-bold'>Blogs <span><img src={down} alt="" /></span></Link>
-              <Link className='flex ga text-[18px] font-bold mb-4'>About <span><img src={down} alt="" /></span></Link>
-              <Link className='px-[20px] py-[10px] border-width border-primary rounded-[10px] font-[700]  text-primary' to='#'>Login</Link>
-              <Link className='px-[20px] py-[10px] bg-primary rounded-[10px] font-[700] text-white'  to='#'>Register</Link>
-            </div>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center pt-[70px] pb-[70px]">
+        <Navbar />
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center pt-[10px] md:pt-[70px] pb-[70px]">
           {/* text contents */}
           <div className="p-2">
             <p className="text-[65px] font-bold ">Find  <GText text='Partners'/> (CAs) available online</p>
