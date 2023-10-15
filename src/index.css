@@ -1,12 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+
+
+.font-inter{
+  font-family: 'Inter', sans-serif;
+}
+.font-Osans{
+  font-family: 'Open Sans', sans-serif;
+}
+.font-poppins{
   font-family: 'Poppins', sans-serif;
 }
 
 .border-width{
   border-width: 1.5px;
+}
+
+.mrounded{
+  border-radius: 10px;
 }
