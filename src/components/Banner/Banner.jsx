@@ -3,15 +3,9 @@ import GText from "../../shared/GText/GText";
 import banner1 from '../../assets/banner1.png'
 import banner2 from '../../assets/banner2.png'
 import banner3 from '../../assets/banner3.png'
-import down from '../../assets/icons/down.svg'
-import logo from '../../assets/logo.png'
-import menu from '../../assets/icons/menu.svg'
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import Navbar from '../Navbar/Navbar';
 
 const Banner = () => {
-  const [open, setOpen] = useState(false)
   return (
     <div className="relative font-poppins">
       <img src={bg} className="w-full h-[1350px] md:h-[1070px] lg:h-[730px] md:block" alt="" />

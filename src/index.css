@@ -22,3 +22,9 @@
 .mrounded{
   border-radius: 10px;
 }
+.card-shadow{
+  box-shadow: 2px 4px 15px 0px rgba(133, 133, 167, 0.25);
+}
+.shadow2{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
