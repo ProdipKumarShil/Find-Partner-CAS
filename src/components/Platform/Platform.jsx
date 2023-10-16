@@ -11,7 +11,7 @@ import girl from '../../assets/girl.png'
 const Platform = () => {
   return (
     <div>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 font-poppins gap-2 md:items-center px-2">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 font-poppins gap-2 md:items-center px-2 mt-[132px]">
         <div className="">
           <p className="text-[65px] font-bold"><GText text="All-in-One"/> platform that Makes Easier</p>
           <p className="text-[24px] font-normal">We are more than a platform; We are your <br /> success partner. Discover our services to achieve your business and educational goals</p>
