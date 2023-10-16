@@ -8,8 +8,8 @@ const Navbar = () => {
   const [open, setOpen] = useState(false)
   return (
     <div className="max-w-7xl  mx-auto">
-      <div className="flex items-center my-5 mx-5">
-        <img src={logo} alt="" />
+      <div className="flex items-center my-5 px-2">
+        <Link to='/'><img src={logo} alt="" /></Link>
         <div className="lg:flex gap-10 ml-[48px] hidden">
           <Link className='flex ga text-[18px] font-bold'>Solutions <span><img src={down} alt="" /></span></Link>
           <Link className='flex ga text-[18px] font-bold'>Features <span><img src={down} alt="" /></span></Link>

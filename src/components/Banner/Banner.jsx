@@ -4,8 +4,11 @@ import banner1 from '../../assets/banner1.png'
 import banner2 from '../../assets/banner2.png'
 import banner3 from '../../assets/banner3.png'
 import Navbar from '../Navbar/Navbar';
+import Search from '../../shared/Search/Search';
+import { useState } from 'react';
 
 const Banner = () => {
+  const [result, setResult] = useState([])
   return (
     <div className="relative font-poppins">
       <img src={bg} className="w-full h-[1350px] md:h-[1070px] lg:h-[730px] md:block" alt="" />
@@ -18,10 +21,7 @@ const Banner = () => {
           <div className="p-2">
             <p className="text-[65px] font-bold ">Find  <GText text='Partners'/> (CAs) available online</p>
             <p className="text-[#616161] text-[20px] font-normal font-Osans"><span className="font-bold">CONNECT</span> with us where your services are listed and visible to a myriad of businesses seeking CA’s for compliance support</p>
-            <div className="mt-[60px] relative font-inter">
-              <input className="w-full py-[23px] px-[30px] text-[18px] font-bold mrounded text-[#AEB0B4]" type="name" name="name" id="" placeholder="Search by name" />            
-              <button className="bg-primary text-white py-[29px] mrounded text-xs font-bold px-[66px] absolute right-0">Search</button>
-            </div>
+            <Search setResult={setResult}/>
           </div>
 
           {/* imgs content */}
